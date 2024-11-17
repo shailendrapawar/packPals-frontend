@@ -9,4 +9,14 @@ background-color: black;
 
 color: white;
 }
+.start-btn{
+transition: 0.1s ease-out;
+}
+.start-btn:hover{
+    transform: scale(1.05);
+    width: 50%;
+}
 
+.start-btn:active{
+    transform: scale(1);
+}
