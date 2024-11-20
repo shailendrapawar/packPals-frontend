@@ -8,8 +8,8 @@ const Login = () => {
   const[password,setPassword]=useState("")
   const[error,setError]=useState("")
 
+  //handles all login logic as well as user error checking=========================
   const handleLogin=()=>{
-    
     if(email==""||password==""){
       setError("enter all fields first")
       setTimeout(()=>{
@@ -21,13 +21,12 @@ const Login = () => {
         alert("invalid email")
         return
       }
-      //code for handling login
-      alert(email+"-----"+password)
+      alert("all fields correct")
     }
   }
 
   return (
-    
+
     <div className=' bg-[#F5F5F5] login-block h-screen flex flex-col justify-evenly items-center'>
 
       <section className='h-auto w-auto p-5'>
